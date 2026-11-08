@@ -1,0 +1,10 @@
+name: Probe
+on:
+  issue_comment:
+    types:
+      - created
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "RAN issue_comment"
